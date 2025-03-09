@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <x-data></x-data>
+
+
+    <div x-component></div>
+
+    <div j-component></div>
+
+    <div id="app">
+        <p jm-p="title"> </p>
+    </div>
+
+    <button jm-get="https://jsonplaceholder.typicode.com/posts/1"
+        jm-target="#app"
+        jm-trigger="click once load changed throttle from:#ffgj2">
+        CLICK ME!!!
+    </button>
+
+    <!-- <button jm-post="https://jsonplaceholder.typicode.com/posts/1" jm-trigger="click">
+        CLICK ME!!!
+    </button> -->
+    <!-- <div jm-get="https://jsonplaceholder.typicode.com/posts/1"   >
+        <h1 jm-text="title"></h1>
+
+        <button jm-trigger="click" >
+            OK FETCH
+        </button>
+    </div> -->
+</body>
+
+<script type="module">
+    import { initJML } from "./dist/jhml.esm.js"
+    initJML()
+</script>
+
+<!-- <script src="dist/jhtml.umd.js"></script> -->
+
+<!-- <script defer>
+    JHTML.init();
+</script> -->
+
+</html>
