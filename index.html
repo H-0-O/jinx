@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <jm-config
+        base-url=""
+    />
+
+    <jm-base-url></jm-base-url>
 </head>
 
 <body>
@@ -17,15 +22,50 @@
     <div j-component></div>
 
     <div id="app">
-        <p jm-p="title"> </p>
+        <p jx-p="title"> APPPPPPP </p>
     </div>
 
-    <button jm-get="https://jsonplaceholder.typicode.com/posts/1"
-        jm-target="#app"
-        jm-trigger="click once load changed throttle from:#ffgj2">
-        CLICK ME!!!
-    </button>
+    <select  jx-get="https://jsonplaceholder.typicode.com/posts/1" jx-target="#app"
+        jx-trigger="once load change changed throttle from:#ffgj2">
+        <option value="HELLO">
+            HELLO
+        </option>
+        <option value="name">
+            HI
+        </option>
+    </select>
 
+    <div class="hello">
+        <p jm-p="title">HELLO</p>
+        <p jm-p="body" >THIS IS BODY</p>
+        <button>increase</button>
+    </div>
+
+    <div class="hello">
+        <p jx-p="title">HELLO</p>
+        <p jx-p="body">THIS IS BODY</p>
+    </div>
+<!--     
+    <button jx-get="https://jsonplaceholder.typicode.com/posts/1" jx-target=".hello" jx-trigger="mouseleave,click">
+        CLICK !!!!!
+    </button> -->
+
+    <form jx-post="https://jsonplaceholder.typicode.com/posts/">
+        <input name="title" />
+
+        <input name="theArr[]" />
+        <input name="theArr[]" />
+        <input name="obj[mmad][age]" />
+        <input name="obj[mmad][name]" />
+        <input name="obj[mmad][]" />
+        <input name="obj[mmad][]" />
+        <input name="obj[ali][age]" />
+        <input name="obj[ali][name]" /> 
+        <input name="obj[ali][scores][]" />
+        <input name="obj[ali][scores][]" />
+        <input name="obj[ali][scores][]" />
+        <input type="submit" value="SUBMIT MEEE!!!" />
+    </form>
     <!-- <button jm-post="https://jsonplaceholder.typicode.com/posts/1" jm-trigger="click">
         CLICK ME!!!
     </button> -->

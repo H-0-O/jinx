@@ -27,10 +27,12 @@ export function initJML() {
 }
 
 async function mountJML() {
-    let elements: Element[] = document.querySelectorAll("[jm-get],[jm-post],[jm-put],[jm-patch],[jm-delete]") as any;
+    let elements: Element[] = document.querySelectorAll("[jx-get],[jx-post],[jx-put],[jx-patch],[jx-delete]") as any;
 
     const components  = analyze(elements);
     binds(components)
+    console.log(components);
+    
     return;
     // for (const el of elements) {
 

@@ -1,11 +1,11 @@
 import { MethodMap, Request } from "../types";
 
 const METHOD_MAP: Record<string, MethodMap> = {
-    "jm-get": "get",
-    "jm-post": "post",
-    "jm-put": "put",
-    "jm-patch": "patch",
-    "jm-delete": "delete",
+    "jx-get": "get",
+    "jx-post": "post",
+    "jx-put": "put",
+    "jx-patch": "patch",
+    "jx-delete": "delete",
 };
 
 export default function (el: Element): Request {
